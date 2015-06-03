@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,0, user-scalable=no"/>
+
+	<title>Portafolio | Proyecto Final | Programacion Web </title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+
+	<script src="js/evento.js"></script>
+	<script src="js/jquery-1.11.3.min.js"></script>	
+
+
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type=" id="btnPrincipal" button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm">
+					
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand"></a>
+			</div>
+
+
+			<div class="collapse navbar-collapse" id="navegacion-fm">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#" id="btninicio" onclick="Inicio" value="0">INICIO</a></li>
+					<li><a href="#" id="btnproyectos"  onclick="Pagina()" value="0">PROYECTOS</a></li>
+					<li><a href="#" id="btnexamenes" onclick="Examenes()" value="0" >EXAMENES</a ></li>	
+					<li><a href="#" id="btninf"onclick="informacion()" value="0">INFORMACION</a></li>
+				</ul>
+
+		<form action="" class="navbar-form navbar-right" role="search">
+			<div class="form-group">
+				<input type="text" class="form-control" >
+			</div>
+				<button id="btnPrincipal" type="submit" class="btn btn-primary"> <span class="glyphicon glyphicon-home"></span></button>
+		</form>
+		</div>
+		</div>
+	</nav>
+	
+</header>
+
+<section class="jumbotron ">
+	<div class="container">	
+	</div>
+</section>
+
+
+<section>
+	<img src="img/html.png" alt="" id="imgInicio">
+</section>
+
+<section>
+	<img src="img/css3.png" alt="" id="imgcss">
+</section>
+
+<!--Menu de Paginas-->
+
+
+		<section class="paginacion">
+			<ul>
+				<li><a href="#" id="btn1" onclick="mostrarimg()" value="0">1</a></li>
+				<li><a href="#" id="btn2" onclick="mostrarimge()" value="0">2</a></li>
+				
+			</ul>
+		</section>
+
+<!--- Pagina 1-->
+<section class="main container" id="pagina1">
+	<div class="row">
+		<section class="posts col-md-9">
+		<div class="miga-de-pan">
+			<ol class="breadcrumb">
+			<li><a href="#">Inicio</a></li>
+			<li class="active">Portafolio</li>
+			</ol>
+		</div>	
+
+		<article class="post clearfix">
+		<a href="#" class="thumb pull-left">
+			<img class="img-thumbnail"src="img/practica1.jpg" alt="" id="img1">
+		</a>
+			<h2 class="post-title">
+				<a href="#">Practica #1</a>
+			</h2>
+			<p><span class="post-fecha">31 de Mayo de 2015</span> por <span class="post-autor"> <a href="#">César</a>
+			</span></p>
+			<p class="post-contenido text-justify">
+					En esta primer practica realizamos el diseño de una pagina web, en el cual manejamos HTML y nuevas caracteristicas de CSS3.
+			</p>
+			<div class="contenedor-botones">
+				<a id="btn1" href="#" class="btn btn-primary">Ver...</a>
+			</div>
+		</article>
+
+		<article class="post clearfix">
+		<a href="#" class="thumb pull-left">
+			<img class="img-thumbnail"src="img/proyectovideo.png" alt="" id="img1">
+		</a>
+			<h2 class="post-title">
+				<a href="#">Practica #2</a>
+			</h2>
+			<p><span class="post-fecha">31 de Mayo de 2015</span> por <span class="post-autor"> <a href="#">César</a>
+			</span></p>
+			<p class="post-contenido text-justify">
+					La primera pagína utilizando media: 
+					Tales como la herramienta de audio y video dentro de nuestra pagina, con diferentes herramientas en HTML5.
+			</p>
+			<div class="contenedor-botones">
+				<a id="btn2" href="#" class="btn btn-primary">Ver...</a>
+			</div>
+		</article>
+
+		<article class="post clearfix">
+		<a href="#" class="thumb pull-left">
+			<img class="img-thumbnail"src="img/css2.png" alt="" id="img1">
+		</a>
+			<h2 class="post-title">
+				<a href="#">Practica #3</a>
+			</h2>
+			<p><span class="post-fecha">31 de Mayo de 2015</span> por <span class="post-autor"> <a href="#">César</a>
+			</span></p>
+			<p class="post-contenido text-justify">
+				En la practica 3, hicimos el diseño de una empresa de venta de ropa y calzado, usando HTML5 y CSS3.
+			</p>
+			<div class="contenedor-botones">
+				<a id="btn3" href="#" class="btn btn-primary">Ver...</a>
+			</div>
+		</article>
+
+
+		<article class="post clearfix">
+		<a href="#" class="thumb pull-left">
+			<img class="img-thumbnail"src="img/proyecto.png" alt="" id="img1">
+		</a>
+			<h2 class="post-title">
+				<a href="#">Proyecto #1</a>
+			</h2>
+			<p><span class="post-fecha">31 de Mayo de 2015</span> por <span class="post-autor"> <a href="#">César</a>
+			</span></p>
+			<p class="post-contenido text-justify">
+				Este proyecto fue en base al examen de la segunda unidad de Programacion Web, en el cual manejamos HTML5 y CSS3, y herramientas como Boostrap.
+			</p>
+			<div class="contenedor-botones">
+				<a id="btn4" href="#" class="btn btn-primary">Ver...</a>
+			</div>
+		</article>
+	</section>
+	</section>
+
+
+<!--- Pagina 2-->
+
+<section class="main container" id="pagina2">
+	<div class="row">
+<section class="posts col-md-9">
+		<div class="miga-de-pan">
+			<ol class="breadcrumb">
+			<li><a href="#">Inicio</a></li>
+			<li class="active">Portafolio</li>
+			</ol>
+		</div>	
+
+		<article class="post clearfix">
+		<a href="#" class="thumb pull-left">
+			<img class="img-thumbnail"src="img/examen2.png" alt="" id="img1">
+		</a>
+			<h2 class="post-title">
+				<a href="#">Examen #2</a>
+			</h2>
+			<p><span class="post-fecha">31 de Mayo de 2015</span> por <span class="post-autor"> <a href="#">César</a>
+			</span></p>
+			<p class="post-contenido text-justify">
+				Este fue el primer diseño en examen practico, que va en la 2 unidad, utilizando herramientras como Boostrap, lenguaje HTML5 y para nuestros diseños y estilos CSS3.
+			</p>
+			<div class="contenedor-botones">
+				<a id="btn3" href="#" class="btn btn-primary">Ver...</a>
+			</div>
+		</article>
+
+
+		<article class="post clearfix">
+		<a href="#" class="thumb pull-left">
+			<img class="img-thumbnail"src="img/examen3.png" alt="" id="img1">
+		</a>
+			<h2 class="post-title">
+				<a href="#">Examen #3</a>
+			</h2>
+			<p><span class="post-fecha">31 de Mayo de 2015</span> por <span class="post-autor"> <a href="#">César</a>
+			</span></p>
+			<p class="post-contenido text-justify">
+				Este diseño fue elaborado en el examen de la 3 unidad, utilizando el manejo y manupulación de datos, HTML5, CSS3, JQUERY y PHPH.
+			</p>
+			<div class="contenedor-botones">
+				<a id="btn4" href="#" class="btn btn-primary">Ver...</a>
+			</div>
+		</article>
+
+</section>
+</section>
+
+
+<!--Informacion Personal-->
+
+<section>
+
+	<article id="artA">
+	<div class="pricing-wrapper clearfix">
+		<div class="pricing-table">
+			<h1 class="pricing-title">INFORMACION ACADEMICA</h1>
+			<div class="table-price">Datos</div>
+			<ul class="pricing-list">
+
+				<li>Nombre: <span>César Raymundo Espinoza Guerrero</span></li>
+				<li>Carrera: <span>Ing. Tics</span></li>
+				<li>Semestre: <span>6 </span></li>
+				<li>No. de Cotrol: <span>12170854</span></li>
+				<li>Escuela:<span>Instituto Tecnologico de Culiacan</span></li>
+			</ul>
+			<div class="table-buy">
+				<img class="img-thumbnail"src="img/cesar.jpg" alt="" >
+			</div>
+		</div>
+	</article>
+
+		<article id="artB">
+
+		<div class="pricing-table recommended">
+			<h1 class="pricing-title">CURRICULUM VITAE</h1>
+			<div class="table-price">Datos</div>
+			<ul class="pricing-list">
+				<li>Escolaridad: <span>Tecnico en Informatica</span></li>
+				<li>Plantel: <span>Conalep 1-Juan de Dios Batiz</span></li>
+				<li>Año: <span>2009-2012</span></li>
+				<li>Idiomas: <span >100% Español/80% Ingles</span></li>
+				<li>Empleo Actual:<span >Revista Mundo Deporte-Fotografo</span></li>
+			</ul>
+			<div class="table-buy">
+				
+			</div>
+		</div>
+		</article>
+	</section>
+	</div>
+
+	
+<footer>
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-3"><h4>Derechos Reservados</h4>
+			<div class="textwidget">César R. Espinoza Guerrero<br>
+			<br>Instituto Tecnologico de Culiacan<br>
+			Tel. (667) 71545126<br>
+			<a href="">Cesar.ray128@gmail.com</a><br>
+			</div>
+			</div>
+
+				<div class="col-md-3"><h4>mis redes sociales</h4>			
+				<div class="textwidget">
+
+			<a href="https://es-la.facebook.com/cesar.espinozaa" target="_blank" class="btred"><img src="img/facebook.png" alt="facebook" title="facebook"></a>
+            <a href="https://twitter.com/" target="_blank" class="btred"><img src="img/twitter.png" alt="twitter" title="twitter"></a>
+            <a href="http://www.gmail.com" target="_blank" class="btred"><img src="img/googleplus.png" alt="gmail" title="gmail"></a><br><br>
+        		</div>
+				</div>
+	
+	</div>
+</footer>
+
+</body>
+</html>
+
+
